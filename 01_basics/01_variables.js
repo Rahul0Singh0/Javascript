@@ -1,6 +1,11 @@
 // camelCase   
 // PascalCase
 // snake_case
+/*
+  constant -> after declaration, can't be change in future
+  variable -> after declaration, can be change as per requirement
+    memory location named
+*/
 const accountId = 1443545; //constant declaration
 // variable declaration
 let accountEmail = "rahul@google.com";
