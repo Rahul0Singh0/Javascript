@@ -1,0 +1,3 @@
+constant -> after declaration, can't be change in future
+variable -> after declaration, can be change as per requirement
+memory location named
