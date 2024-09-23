@@ -1,6 +1,7 @@
 ## Touch command in windows
-  npm install touch-cli -g
+  >npm install touch-cli -g
   touch command is used to create file though command line.
+  >touch 'file_name.js'
 
 ## to use module js
   Modulejs work asynchronously where as commanjs works synchronously
