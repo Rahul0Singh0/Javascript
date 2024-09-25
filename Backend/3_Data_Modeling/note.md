@@ -11,3 +11,7 @@
 ## Note: Interview
    Data model Name converted to plural form and lowercase in database(mongodb)
    example : "User" => "users", "Todo" => "todos"
+
+## JavaScript note:
+   In Object, Order of data doesnot matter but in Array order matter
+   
