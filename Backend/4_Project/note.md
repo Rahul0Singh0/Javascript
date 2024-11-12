@@ -35,3 +35,13 @@
   Prettier is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.
   > npm i prettier
   > npm i -D prettier
+
+
+# installation of modules
+  > npm i mongoose
+  > npm i express
+  > npm i dotenv
+
+# process
+  The process object provides information about, and control over, the current Node.js process.
+  > process.exit(1), process.on(),....
