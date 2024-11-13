@@ -8,3 +8,9 @@ while (i <= 10) {
     console.log(i);
     i++;
 }
+
+let a = 1;
+for( ; a <= 10; a++) {
+    if(a%7 == 0) continue;
+    console.log(a)
+}
