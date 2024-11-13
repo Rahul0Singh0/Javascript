@@ -14,3 +14,10 @@ function g(y) {
 
 let ans = g(10);
 console.log(ans);
+
+function test() {
+    let x = 10;
+    x += 1;
+}
+let ans1 = test();
+console.log(ans1); // JS automatically return undefined value
