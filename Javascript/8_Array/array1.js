@@ -2,7 +2,7 @@ let arr1 = []; // empty array
 let arr2 = ['rahul',1,null, true];
 console.log(arr1, arr2);
 console.log(typeof(arr1));
-
+arr1.push(10);
 console.log(arr1[0]); // access
 arr1[0] = 90; // modify
 
