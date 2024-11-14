@@ -9,4 +9,8 @@ let x = 10;
 
 let str = `value of x is ${x}`;
 
+let str1 = `\`\``;
+
 console.log(str);
+
+console.log(str1);
