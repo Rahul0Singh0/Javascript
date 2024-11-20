@@ -37,3 +37,14 @@ let obj = {
 }
 
 obj.fn();
+
+let obj1 = {
+    x: 10,
+    y: 20,
+    fn: function () {
+        const arrow = () => {
+            const m = {x: 99, y: 99, g: function () {console.log(this.x)}}
+        }
+        arrow();
+    }
+}
