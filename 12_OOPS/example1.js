@@ -12,8 +12,11 @@ console.log(obj);
 console.log(obj.this);
 console.log(obj.new);
 
-function constructor () {
-    console.log("We are using constructor keyword as function name");
-}
+let constructor = 10;
 
-constructor();
+// function constructor () {
+//     console.log("We are using constructor keyword as function name");
+// }
+
+// constructor();
+console.log(constructor);
