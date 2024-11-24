@@ -5,6 +5,9 @@ function Product(n, p, d) { // as a constructor
     this.name = n;
     this.price = p;
     this.description = d;
+    // function displayProduct() { // TypeError: iphone.displayProduct is not a function
+    //     console.log("Name: ",this.name, " Price: ", this.price, " Description: ", this.description);
+    // }
     this.displayProduct = function () {
         console.log("Name: ",this.name, " Price: ", this.price, " Description: ", this.description);
     }
