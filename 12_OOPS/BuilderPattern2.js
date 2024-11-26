@@ -1,4 +1,5 @@
 class Product {
+    // Private Properties : mode private to avoid irrelevant updates outside the class
     #price;
     #name;
     #description;
