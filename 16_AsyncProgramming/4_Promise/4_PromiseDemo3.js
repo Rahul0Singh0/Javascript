@@ -5,10 +5,10 @@ const pr = new Promise(function exec(res, rej) {
         console.log(randomNumber);
         if( randomNumber%2 === 0 ) {
             // random number is even
-            res();
+            res(randomNumber);
         } else {
             // random number is odd
-            rej();
+            rej(randomNumber);
         }
     }, 5000);
 });
