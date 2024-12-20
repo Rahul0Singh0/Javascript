@@ -1,0 +1,53 @@
+function loadTodos() {
+    // This function will load the todos from the browser
+    // we use localStorage of browser
+    const todos = JSON.parse(localStorage.getItem("todos")) || {"todoList": []};
+    console.log(todos);
+    return todos;
+}
+
+function addTodoToLocalStorage(todoText) {
+    const todos = loadTodos();
+    todos.todoList.push(todoText);
+    localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+function appendTodoInHtml(todoText) {
+    const todoList = document.getElementById('todoList');
+    const todos = document.createElement('li');
+    todos.textContent = todoText;
+    todoList.appendChild(todos);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const todoInput = document.getElementById('todoInput');
+
+    const submitButton = document.getElementById('addTodo');
+
+    submitButton.addEventListener("click", (event) => {
+        const todoText = todoInput.value;
+        if(todoText === '') {
+            alert("Please write something for the todo");
+        } else {
+            addTodoToLocalStorage(todoText);
+            appendTodoInHtml(todoText);
+            todoInput.value = "";
+        }
+    });
+
+    todoInput.addEventListener("change", (event) => {
+        // change event
+        // This callback method is fired everytime there is a change in the input tag
+        const todoText = event.target.value;
+        event.target.value = todoText.trim(); // extra spaces removed from the last
+        console.log(event.target.value)
+    });
+
+    const todos = loadTodos();
+    todos.todoList.forEach(todo => {
+        const newTodoItem = document.createElement('li');
+        newTodoItem.textContent = todo;
+        todoList.appendChild(newTodoItem);
+    });
+});
