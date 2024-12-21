@@ -1,6 +1,11 @@
 :root {
     --body-background: #f4f4f9;
     --btn-primary: #5cabff;
+    --btn-secondary: #f8e068;
+    --btn-active: #4a90e2;
+    --btn-edit: #ffd700;
+    --btn-complete: #32cd32;
+    --btn-delete: #ff6347;
 }
 
 * {
@@ -40,6 +45,11 @@ h1 {
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addTodo:hover {
+    background-color: var(--btn-delete);
 }
 
 ul {
@@ -58,4 +68,60 @@ li:hover {
 
 li:last-child {
     border-bottom: none;
+}
+
+.filterBtns, .editBtn, .deleteBtn, .completeBtn {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: var(--btn-secondary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.editBtn {
+    background-color: var(--btn-edit);
+    transition: background-color 0.3s;
+}
+
+.editBtn:hover {
+    background-color: var(--btn-active);
+}
+
+.deleteBtn {
+    background-color: var(--btn-delete);
+    transition: background-color 0.3s;
+}
+
+.deleteBtn:hover {
+    background-color: var(--btn-active);
+}
+
+.completeBtn {
+    background-color: var(--btn-complete);
+    transition: background-color 0.3s;
+}
+
+.completeBtn:hover {
+    background-color: var(--btn-active);
+}
+
+.filterBtns:hover {
+    background-color: var(--btn-active);
+}
+
+.todoItem {
+    letter-spacing: 1px;
+}
+
+.todoItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.completed {
+    text-decoration: line-through;
 }
